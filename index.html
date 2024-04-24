@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    <link rel="stylesheet" href="./styles/output.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <title>Espaço Buffet</title>
+    
+   
+</head>
+<body>
+    
+    
+                                      <!--LOGO-->
+    <header class="w-full h-[420px] bg-zinc-950  opacity-4  bg-home  bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center"> 
+            <img src="./assets/logo.png" alt="Logo Espaço Buffet"
+            class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200 "/>
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Espaço buffet</h1>
+            <span class="text-green-100 font-medium">Sirinhaém - PE, Brazil</span>
+            <div class="bg-green-500 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Dom á Dom - 11h às 14h</span>
+            </div>
+        </div>
+        
+        
+                         <!--INTRODUÇÃO-->
+    </header>
+    <h2 class="text-2x1 md:text-3xl font-bold text-center mt-9 mb-6">
+        Nosso cardapio do dia
+    </h2>
+        
+                           <!--Menu completo-->
+    <div id="menu">
+         <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md-gap-10 mx-auto max-w-7xl px-2 mb-15">
+
+                         <!--produto imagem-->
+
+        <div class="flex gap-2">
+                <img src="./assets/galeto.jpeg" alt="Galeto na brasa"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-1 duration-200"/>
+
+                         <!--Nome e descrição produto-->
+            <div>
+                <p class="font-bold">Galeto na brasa</p>
+                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisci elit onsectetur adipisci eli </p>
+               
+                        <!--PREÇO e carrinho-->
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 23</p>                   
+                    <button class="bg-black px-5 rounded add-add-to-card-btn"
+                    data-name="Galeto na brasa"
+                    data-price="23">
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                 </div>
+            </div>
+        </div> 
+
+        <!--PRODUTO 2-->
+
+                <!--produto imagem-->
+                <div class="flex gap-2">
+                    <img src="./assets/toscana.jpg" alt="toscana"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-1 duration-200"/>
+                <!--Nome e descrição produto-->
+                <div>
+                    <p class="font-bold">Toscana na brasa</p>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisci elit onsectetur adipisci eli </p>
+                   
+                    <!--PREÇO e carrinho-->
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 19</p>                   
+                        <button class="bg-black px-5 rounded add-add-to-card-btn"
+                        data-name="Toscana na brasa"
+                        data-price="19">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                     </div>
+                </div>
+            </div> 
+            <!--PRODUTO-->
+
+                    <!--PRODUTO 3-->
+
+                <!--produto imagem-->
+                <div class="flex gap-2">
+                    <img src="./assets/costelinha.png" alt="costelinha"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-1 duration-200"/>
+                <!--Nome e descrição produto-->
+                <div>
+                    <p class="font-bold">Costelinha</p>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisci elit onsectetur adipisci eli </p>
+                   
+                    <!--PREÇO e carrinho-->
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 25</p>                   
+                        <button class="bg-black px-5 rounded add-add-to-card-btn"
+                        data-name="costelinha"
+                        data-price="25">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                     </div>
+                </div>
+            </div> 
+            <!--PRODUTO-->
+
+                    <!--PRODUTO 4-->
+
+                <!--produto imagem-->
+                <div class="flex gap-2">
+                    <img src="./assets/bisteca.jpg" alt="bisteca"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-1 duration-200"/>
+                <!--Nome e descrição produto-->
+                <div>
+                    <p class="font-bold">bisteca</p>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisci elit onsectetur adipisci eli </p>
+                   
+                    <!--PREÇO e carrinho-->
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 18</p>                   
+                        <button class="bg-black px-5 rounded add-add-to-card-btn"
+                        data-name="bisteca"
+                        data-price="18">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                     </div>
+                </div>
+            </div> 
+            <!--PRODUTO-->
+
+                                <!--PRODUTO 5-->
+
+                <!--produto imagem-->
+                <div class="flex gap-2">
+                    <img src="./assets/guisado.png" alt="Frango ao molho"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-1 duration-200"/>
+                <!--Nome e descrição produto-->
+                <div>
+                    <p class="font-bold">Frango ao molho</p>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisci elit onsectetur adipisci eli </p>
+                   
+                    <!--PREÇO e carrinho-->
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 18</p>                   
+                        <button class="bg-black px-5 rounded add-add-to-card-btn"
+                        data-name="frango ao molho"
+                        data-price="20">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                        
+                     </div>
+                </div>
+            </div> 
+            
+            <!--PRODUTO-->
+                 </main>
+                 
+
+
+        <!--serviços-->
+        <div class="mx-auto max-w-7x1 px-2 my-2">
+            <h2 class="text-2x1 md:text-3xl font-bold mt-9 grid grid-cols-1 md:grid-cols-2 gap-7 md-gap-10 mx-auto max-w-7xl px-2 mb-16">
+                Serviço de buffet
+            </h2>
+        </div>
+
+
+                                          <!--Prestação de serviço-->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md-gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu2">
+
+                    <!--produto imagem-->
+                    <div class="flex gap-2 w-full">
+                        <img src="" alt="serviço"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-1 duration-200"/>
+                    <!--Nome e descrição produto-->
+                    <div>
+                        <p class="font-bold">Serviço de buffet</p>
+                        <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisci elit onsectetur adipisci eli </p>
+                        <div>
+                            <!-- ... -->
+                            <!-- Complementos -->
+
+                            <!-- ... -->
+                        </div>
+                        
+                        <!--PREÇO e carrinho-->
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ A consultar</p>                   
+                            <button class="bg-black px-5 rounded add-add-to-card-btn"
+                            data-name="serviço"
+                            data-price="a consultar">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                            </div>
+                    </div>
+                </div> 
+                                              <!-- FIM PRODUTO-->
+
+
+
+          </div>
+        </div>
+                                   <!--MODAL ACOMPANHAMENTO -->
+                                   <!-- Modal de Acompanhamentos -->
+
+                                
+                                                  <!--endereço-->
+                                                  <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-99 items-center justify-center hidden"
+                                                  id="cart-Modal">
+                                                 <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px]">
+                                                     <h2 class="text-center font-bold text-2xl mb-2">Meus pedido</h2>
+                                                     <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+                                                     
+                                                     <!-- seleção de acompanhamentos -->
+                                                    
+                                         
+                                            <p class="font-bold">Total: <span id="total">0.00</span> </p>
+                                               <div class="flex items-center gap-2 justify-between mt-3">
+                                            </select>
+                                        </div>
+                                        <p class="font-bold mt-2">Seu Nome</p>
+                                        <input type="text" id="nome" placeholder="Digite seu nome"class="w-full border-2 p-1 rounded my-1"/>
+
+                                         <p class="font-bold mt-2">Endereço entrega</p>
+                                         <input type="text" placeholder="Digite o Nome da Rua,Numero da Casa e o Complemento" id="endereço" class="w-full border-2 p-1 rounded my-1"/>
+                                         <p class="text-red-500 hidden" id="alerta-endereço">Digite o seu endereço</p>
+
+                                         <div class="flex items-center justify-between mt-4 w-full">
+                                             <button id="fechar">fechar</button>
+                                             <button id="finalizar" class="bg-green-500 text-white px-4 py-1 rounded">finalizar pedido</button>
+                                         </div>
+                                     </div>
+                                 </div>
+
+                                             
+                                             
+                                             <!--FINALZIN-->
+                <FOOter class="fixed bottom-0 left-0 w-full z-40 bg-gray-950 py-3">
+                    <button class=" flex items-center justify-center gap-2 text-white font-bold w-full" id="cart">
+                        (<span id="cart-count">0</span>)
+                        Meus pedidos
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </FOOter>
+                
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+                <script src="script.js"></script>
+</body>
+</html>
+           
